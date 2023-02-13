@@ -1,4 +1,9 @@
+import { setEmployees } from './employeesSlice';
+import dataJson from '../../../employees.json';
 
-
-import dataJson from '../../../employees.json'
-console.log(dataJson)
+export const getEmployees = () => {
+    return (dispatch, getState) => {
+        const data = dataJson;
+        dispatch(setEmployees(data.employees));
+    };
+};
