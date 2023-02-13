@@ -16,9 +16,11 @@ export const AppRouter = () => {
 
       <div className="container">
         <Routes>
-          <Route path="home" element={<Home />} />
-          <Route path="add" element={<AddEmpleado />} />
-          <Route path="edit/:employeesId" element={<EditEmpleado />} />
+          <Route path="/home" element={<Home />} />
+          
+          <Route path="/add" element={<AddEmpleado />} />
+
+          <Route path="/edit/:employeesId" element={<EditEmpleado />} />
 
           <Route path="/detail/:employeesId" element={<Detalles />} />
 

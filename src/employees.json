@@ -2,8 +2,8 @@
     "employees": [
         {
             "id": 1,
-            "firstname":"Jessica",
-            "lastname": "Acosta",
+            "firstname":"Laura",
+            "lastname": "Gomez",
             "email": "correo@hotmail.com",
             "phone_number": 123456789,
             "hire_date":"4/3/2020",

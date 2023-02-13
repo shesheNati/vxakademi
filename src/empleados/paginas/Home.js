@@ -25,25 +25,19 @@ export const Home = () => {
             {employees.map((employee) => {
               return (
                 <div className="card" style={{ width: "18rem" }}>
-                  <div className="card-body">
+                  <div key={employee.id} className="card-body">
                     <h5 className="card-title">
                       {employee.firstname} {employee.lastname}
                     </h5>
                     <h6 className="card-subtitle mb-2 text-muted">
                       {employee.email}
                     </h6>
-                    <p className="card-text">
-                      Telefono: {employee.phone_number}
-                    </p>
-                    <p className="card-text">
-                      Fecha de contratacion: {employee.hire_date}
-                    </p>
-                    <p className="card-text">Salario: {employee.salary}</p>
+
                     <Link
                       to={`/detail/${employee.id}`}
                       className="btn btn-info"
                     >
-                      Detail{" "}
+                      Detalles{" "}
                     </Link>
                     <button
                       type="button"

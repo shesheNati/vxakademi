@@ -46,6 +46,7 @@ export const AddEmpleado = () => {
           type="text"
           className="form-control"
           id="firstname"
+          required
           aria-describedby="emailHelp"
         />
       </div>
@@ -61,6 +62,7 @@ export const AddEmpleado = () => {
           className="form-control"
           id="lastname"
           aria-describedby="emailHelp"
+          required
         />
       </div>
       <div className="mb-3">
@@ -75,6 +77,7 @@ export const AddEmpleado = () => {
           type="email"
           className="form-control"
           id="email"
+          required
           aria-describedby="emailHelp"
         />
       </div>
@@ -87,9 +90,10 @@ export const AddEmpleado = () => {
           name="phone_number"
           onChange={handleChange}
           value={empleado.phone_number}
-          type="text"
+          type="tel"
           className="form-control"
           id="phone_number"
+          required
           aria-describedby="emailHelp"
         />
       </div>
@@ -101,7 +105,7 @@ export const AddEmpleado = () => {
           name="hire_date"
           onChange={handleChange}
           value={empleado.hire_date}
-          type="text"
+          type="date"
           className="form-control"
           id="hire_date"
           aria-describedby="emailHelp"
@@ -115,7 +119,7 @@ export const AddEmpleado = () => {
           name="salary"
           onChange={handleChange}
           value={empleado.salary}
-          type="text"
+          type="number"
           className="form-control"
           id="salary"
           aria-describedby="emailHelp"
